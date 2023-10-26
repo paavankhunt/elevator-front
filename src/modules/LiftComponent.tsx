@@ -59,7 +59,7 @@ function LiftComponent() {
   }, [currentFloor, destinationFloor, isLiftMoving, isLiftMovingUp]);
 
   const addLog = useCallback(async (logData: LogData) => {
-    const result = await fetch(`${process.env.REACT_APP_API_URL}/log`, {
+    const result = await fetch(`${process.env.REACT_APP_API_URL}log`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

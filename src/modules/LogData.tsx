@@ -10,7 +10,7 @@ interface Log {
 function LogData() {
   const [data, setData] = useState<Array<Log>>();
   const getLog = useCallback(async () => {
-    const result = await fetch(`${process.env.REACT_APP_API_URL}/`)
+    const result = await fetch(`${process.env.REACT_APP_API_URL}`)
       .then((response) => {
         return response.json();
       })
