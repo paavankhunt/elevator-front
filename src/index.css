@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App {
+  width: 100vw;
+}
+.lift-box {
+  display: grid;
+  width: min-content;
+  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: grey;
+  padding: 2rem;
+}
+.button-box {
+  display: grid;
+  width: min-content;
+  grid-row-gap: 5px;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: wheat;
+  padding: 10px;
+}
