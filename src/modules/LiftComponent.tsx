@@ -53,7 +53,7 @@ function LiftComponent() {
           setIsLiftMoving(false);
           clearInterval(interval);
         }
-      }, 1000);
+      }, 2000);
     }
     return () => clearInterval(interval);
   }, [currentFloor, destinationFloor, isLiftMoving, isLiftMovingUp]);
